@@ -46,6 +46,8 @@ function abrirWhats() {
     window.open("https://wa.me/5573999413413", "_blank");
 }
 function abrirInsta() {
-    window.open("https://instagram.com/seu_usuario_aqui", "_blank");
+    window.open("https://instagram.com/npdigital_publicidade", "_blank");
 }
+
+
 
