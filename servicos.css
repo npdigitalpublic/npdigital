@@ -32,10 +32,23 @@
 }
 .servicos-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     gap: 20px;
-    width: 100%;
 }
+
+/* Tablet pra cima → 2 colunas */
+@media (min-width: 600px) {
+    .servicos-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* PC → 3 colunas */
+@media (min-width: 900px) {
+    .servicos-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
 /* ANIMAÇÃO – Logo vindo da esquerda */
 @keyframes slideLeft {
     to {
@@ -367,3 +380,4 @@ p {
     color: #000;
 
 }
+
