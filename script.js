@@ -49,5 +49,3 @@ function abrirInsta() {
     window.open("https://instagram.com/npdigital_publicidade", "_blank");
 }
 
-
-
