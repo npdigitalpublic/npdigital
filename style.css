@@ -111,6 +111,16 @@ body.fade-out {
     color: rgb(0, 0, 0);
     transform: scale(1.05);
 }
+/* Animação do botão pulando */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.09); }
+    100% { transform: scale(1); }
+}
+
+.btn-servicos {
+    animation: pulse 1.6s infinite ease-in-out;
+}
 
 
 /* Locais */
@@ -199,4 +209,5 @@ p {
 .btn-servicos {
     font-weight: 600;
 }
+
 
