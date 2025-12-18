@@ -385,19 +385,19 @@ h1, h2, h3 {
 }
 
 .pontos-lotericas strong{
-    background: #1A1A1A;
+    background: #2C2C2C;
     color: white;
     padding: 12px 16px;
     border-radius: 14px;
     font-size: 16px;
     font-weight: 700;
-    border: 2px solid #000;
+    border: 2px solid #ffffff;
     transition: 0.25s ease;
 }
 
 .pontos-lotericas strong:hover{
     background: #ffffff;
-    color: #1A1A1A;
+    color: #dba40e;
     transform: scale(1.08);
 }
 
