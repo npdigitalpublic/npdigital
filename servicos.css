@@ -451,3 +451,22 @@ h1, h2, h3 {
         font-size: 16px;
     }
 }
+/* ✅ RESPONSIVO DO RODAPÉ (corrige no celular) */
+@media (max-width: 600px){
+  .footer-container{
+    flex-wrap: wrap !important;      /* deixa quebrar linha */
+    flex-direction: column !important; /* vira coluna */
+    gap: 14px !important;
+  }
+
+  .footer-bloco{
+    min-width: 0 !important;         /* remove travas */
+    width: 92% !important;           /* ocupa quase toda a tela */
+    max-width: 420px !important;
+    justify-content: center;
+  }
+
+  .footer-numero{
+    font-size: 16px;
+  }
+}
