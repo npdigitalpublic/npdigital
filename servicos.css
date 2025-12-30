@@ -17,7 +17,7 @@ h1, h2, h3 {
 }
 
 /* ---------------------------- */
-/* TOPO                 */
+/* TOPO                         */
 /* ---------------------------- */
 
 .header-servicos {
@@ -127,115 +127,6 @@ h1, h2, h3 {
 }
 
 /* ---------------------------- */
-/* PACOTES                      */
-/* ---------------------------- */
-
-.pacotes {
-    background: #FFCC00;
-    box-shadow: 0 0 20px rgba(0,0,0,0.10);
-    padding: 60px 20px;
-}
-
-.pacotes h2 {
-    font-size: 30px;
-    margin-bottom: 8px;
-}
-
-.linha-pacotes {
-    width: 180px;
-    height: 3px;
-    background: #1A1A1A;
-    margin: 10px auto 30px;
-}
-
-.pacote-card {
-    display: flex;
-    align-items: center;
-    background: white;
-    border-radius: 16px;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 600px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    transition: 0.25s;
-}
-
-.pacote-card:hover {
-    transform: scale(1.03);
-    background: #FB9B00;
-    color: white;
-}
-
-.pacote-card:hover .pacote-logo {
-    filter: brightness(0) invert(1);
-}
-
-.pacote-logo {
-    width: 70px;
-    margin-right: 20px;
-}
-
-.frase-final {
-    margin-top: 25px;
-    font-size: 22px;
-    font-weight: 600;
-}
-
-/* ---------------------------- */
-/* RODAPÉ DARK          */
-/* ---------------------------- */
-
-.footer-contato {
-    background: #1A1A1A;
-    color: white;
-    padding: 60px 20px;
-    margin-top: 60px;
-    
-}
-
-.footer-title {
-    font-size: 28px;
-    margin-bottom: 25px;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: center;
-    gap: 28px;
-    flex-wrap: wrap;
-}
-
-.footer-bloco {
-    background: #2C2C2C;
-    padding: 18px 22px;
-    border-radius: 14px;
-    border: 2px solid #ffffff;
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    cursor: pointer;
-    transition: 0.25s;
-}
-
-.footer-bloco:hover {
-    background: #FB9B00;
-    border-color: #FB9B00;
-    transform: translateY(-4px);
-     border: 2px solid #ffffff;
-}
-
-.footer-whats-icon,
-.footer-insta-icon {
-    width: 50px;
-    
-}
-
-.footer-numero {
-    font-size: 18px;
-    font-weight: 600;
-}
-
-/* ---------------------------- */
 /* SEÇÃO — TOTENS               */
 /* ---------------------------- */
 
@@ -269,26 +160,13 @@ h1, h2, h3 {
     width: 100%;
     max-width: 420px;
     border-radius: 18px;
-
-    border: 4px solid #000;         /* preta */
-    outline: 4px solid #FFCC00;     /* amarela */
+    border: 4px solid #000;
+    outline: 4px solid #FFCC00;
     outline-offset: 4px;
-
     box-shadow: 0 8px 22px rgba(0,0,0,0.22);
 }
 
-
-
 .totens-pontos{
-    background: #1A1A1A;
-    color: white;
-    border-radius: 18px;
-    padding: 26px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.18);
-    border: 3px solid #FFCC00;
-}
-
-.totens-pontos h3{.totens-pontos{
     background: #1A1A1A;
     color: white;
     border-radius: 18px;
@@ -299,6 +177,7 @@ h1, h2, h3 {
         0 0 12px rgba(255, 204, 0, 0.45);
 }
 
+.totens-pontos h3{
     font-size: 22px;
     margin: 0 0 14px;
 }
@@ -336,16 +215,6 @@ h1, h2, h3 {
     border-color: #FB9B00;
 }
 
-/* Responsivo */
-@media (max-width: 820px){
-    .totens-grid{
-        grid-template-columns: 1fr;
-    }
-    .totens-imagem img{
-        max-width: 520px;
-    }
-}
-
 /* ---------------------------- */
 /* SEÇÃO — LOTÉRICAS            */
 /* ---------------------------- */
@@ -367,24 +236,71 @@ h1, h2, h3 {
     width: 180px;
     height: 3px;
     background: #1A1A1A;
-    margin: 10px auto 25px;
+    margin: 10px auto 30px;
     border-radius: 2px;
 }
 
-.texto-lotericas{
-    font-size: 27px;
-    max-width: 720px;
-    margin: 0 auto 35px;
-    line-height: 1.6;
+.lotericas-grid{
+    max-width: 950px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 26px;
+    align-items: center;
+}
+
+.lotericas-imagens{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    justify-items: center;
+    position: relative;
+}
+
+.loterica-tela{
+    width: 100%;
+    max-width: 420px;
+    border-radius: 18px;
+    border: 4px solid #000;
+    outline: 4px solid #ffffff;
+    outline-offset: 4px;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.22);
+}
+
+.loterica-avatar{
+    position: absolute;
+    width: 110px;
+    top: -12px;        
+    right: -12px;      
+    z-index: 2;
+    object-fit: contain;
+    filter: drop-shadow(0 6px 12px rgba(0,0,0,0.25));
+}
+
+
+
+.lotericas-pontos{
+    background: #1A1A1A;
+    color: white;
+    border-radius: 18px;
+    padding: 26px;
+    border: 3px solid #ffffff;
+    box-shadow:
+        0 6px 18px rgba(0,0,0,0.18),
+        0 0 12px rgba(255, 255, 255, 0.25);
+}
+
+.lotericas-pontos h3{
+    font-size: 22px;
+    margin: 0 0 14px;
 }
 
 .pontos-lotericas{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 14px;
-    max-width: 900px;
-    margin: 0 auto 35px;
+    gap: 12px;
+    margin: 0 0 18px;
 }
 
 .pontos-lotericas strong{
@@ -400,12 +316,11 @@ h1, h2, h3 {
 
 .pontos-lotericas strong:hover{
     background: #ffffff;
-    color: #dba40e;
+    color: #1A1A1A;
     transform: scale(1.08);
-     border: 2px solid #000000;
+    border: 2px solid #000;
 }
 
-/* CTA */
 .lotericas-cta{
     display: inline-block;
     margin-top: 10px;
@@ -425,4 +340,114 @@ h1, h2, h3 {
     color: #ffffff;
     border-color: #FB9B00;
     border: 2px solid #000;
+}
+
+/* ---------------------------- */
+/* RESPONSIVO                   */
+/* ---------------------------- */
+
+@media (max-width: 820px){
+    .totens-grid,
+    .lotericas-grid{
+        grid-template-columns: 1fr;
+    }
+    .totens-imagem img,
+    .loterica-tela{
+        max-width: 520px;
+    }
+}
+
+/* Correção tamanho ícones do rodapé */
+.footer-whats-icon,
+.footer-insta-icon{
+    width: 50px !important;
+    max-width: 50px !important;
+}
+@media (max-width: 820px){
+    .loterica-avatar{
+        width: 90px;
+        right: -6px;
+        bottom: -6px;
+    }
+}
+@media (max-width: 600px){
+    .footer-container{
+        flex-direction: row; /* garante lado a lado */
+    }
+}
+/* ---------------------------- */
+/* RODAPÉ — VOLTAR LADO A LADO  */
+/* ---------------------------- */
+
+/* ---------------------------- */
+/* RODAPÉ — PRETO / CINZA       */
+/* ---------------------------- */
+
+.footer-contato{
+    background: linear-gradient(180deg, #1a1a1a, #111);
+    color: #ffffff;
+    padding: 60px 20px;
+    margin-top: 60px;
+}
+
+.footer-title{
+    font-size: 26px;
+    margin-bottom: 32px;
+}
+
+/* container lado a lado */
+.footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    flex-wrap: nowrap;
+}
+
+/* cards */
+.footer-bloco{
+    background: #2b2b2b;
+    padding: 18px 26px;
+    border-radius: 18px;
+    border: 2px solid #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    cursor: pointer;
+    transition: 0.25s ease;
+    min-width: 300px;
+}
+
+/* hover elegante */
+.footer-bloco:hover{
+    background: #1f1f1f;
+    transform: translateY(-4px);
+}
+
+/* ícones */
+.footer-whats-icon,
+.footer-insta-icon{
+    width: 42px;
+    height: auto;
+}
+
+/* texto */
+.footer-numero{
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+/* mobile — continua lado a lado */
+@media (max-width: 600px){
+    .footer-container{
+        gap: 14px;
+    }
+    .footer-bloco{
+        min-width: 260px;
+        padding: 14px 18px;
+    }
+    .footer-numero{
+        font-size: 16px;
+    }
 }
