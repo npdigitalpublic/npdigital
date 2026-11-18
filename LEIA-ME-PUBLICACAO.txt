@@ -1,0 +1,4 @@
+NP Digital V46 - arquivos prontos para enviar NA RAIZ do repositorio.
+Extraia o ZIP e envie os arquivos de dentro da pasta, nao a pasta inteira.
+O index.html utiliza imagens na raiz, como npasemcor.png.
+Para GitHub Pages use main / (root).
